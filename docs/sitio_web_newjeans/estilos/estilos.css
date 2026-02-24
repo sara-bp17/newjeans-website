@@ -1,0 +1,564 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: #3A6FBD;
+font-family: 'Roboto', sans-serif;
+}
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/*________________________*/
+/* Estilos del menú */
+/*________________________*/
+header {
+ background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+#header {
+  display: flex;
+  align-items: center; /* Alinea verticalmente logo y menú */
+  justify-content: space-between; 
+   padding: 0;  
+  margin: 0;
+
+}
+
+.logo img{
+ height: 100px;
+  width: 100px;
+padding: 0px;
+margin: 0px;
+display: block;
+  box-sizing: border-box;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+padding: 0px;
+
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  transition: color 0.3s;
+ 
+  padding: 8px 10px;
+}
+.menu > li{
+  float: left; /*esta diciendo a las listas que vayan hacia izquierda*/
+}
+
+.menu li a:hover {
+  color: lightpink; 
+}
+
+
+.menu li ul{
+  display:none;
+  position: absolute;
+  min-width: 0px;
+
+}
+.menu li:hover > ul{
+ display: block;
+
+}
+
+.contenedor{
+  margin: auto;
+  height: auto;
+  position: relative;
+}
+/*________________________*/
+/* termina el menu */
+/*________________________*/
+
+
+/*________________________*/
+/* css de index */
+/*________________________*/
+
+
+/*________________________*/
+/*estilos de las imagenes*/
+/*________________________*/
+.contenedor img{
+  position: relative;
+  display: block;
+}
+.contenedor nav{
+  position: absolute;
+ padding: 0;
+ margin: 0;
+}
+
+/*________________________*/
+/* inicio de texto superpuesto*/
+/*________________________*/
+.texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -170%); /* Centra el texto */
+  color: white;
+  font-size: 130px;
+  font-weight: bold;
+  text-shadow: 2px 10px 30px black;
+  
+
+}
+/*________________________*/
+/* fin de texto superpuesto*/
+/*________________________*/
+
+/*________________________*/
+/* video link*/
+/*________________________*/
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #3A6FBD;
+}
+.video{
+  width: 500px; /*ancho*/
+  height: auto;
+  border-radius: 10px;
+ margin: 30px;
+ box-shadow: 2px 6px 15px;
+}
+.video-efecto:hover{
+  transform: scale(1.1);
+}
+.video-efecto:hover img{
+  transform: scale(1.1);
+  filter: brightness(0.9);
+}
+.texto{
+   
+  color: #F0EEEF;
+  font-size: 18px;
+  line-height: 1.6;
+
+}
+
+section h2{
+  font-size: 40px;
+}
+
+
+/*________________________*/
+/* fin del css de index */
+/*________________________*/
+
+
+/*________________________*/
+/*css Historia*/
+/*________________________*/
+
+.tituloHistoria{
+  color: #F0EEEF;
+  font-size: 40px;
+  padding: 0px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.bloque{
+  display: flex;
+  padding: 20px 60px;
+  gap: 20px;
+
+}
+.bloque-img-izquierda img{
+  margin: 10px;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.bloque-img img{
+  margin: 20px;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.bloque-texto {
+  max-width: 600px;
+  margin: 20px;
+  text-align: justify;
+
+}
+.bloque-texto-extendido {
+  max-width: 100%;
+  margin: 20px;
+  margin-top: -20px;
+  padding: -30px;
+color: #F0EEEF;
+ font-size: 17px;
+ text-align: justify;
+}
+
+.bloque-texto h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #F0EEEF;
+}
+
+.bloque-texto p {
+  font-size: 17px;
+  color: #F0EEEF;
+  text-align: justify;
+}
+
+/*________________________*/
+/*css Integrantes*/
+/*________________________*/
+
+.tituloIntegrantes{
+  color: #F0EEEF;
+  font-size: 40px;
+  padding: 20px;
+  padding-top: 80px; 
+  margin: 20px 0;
+  text-align: center;
+}
+
+.bloque-integrantes{
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 0px;
+  margin: 20px;
+}
+.bloque-integrantes-abajo{
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding: 10px;
+  margin: 20px;
+}
+.texto-imagen {
+  color: #F0EEEF;
+   position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+  bottom: 3px;
+  left: 7px;
+
+  }
+  .caja-integrantes {
+  width: 226px;
+  height: 226px;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2 10px black;
+}
+
+/*________________________*/
+/* imagenes efecto */
+/*________________________*/
+
+.img-efecto{
+  position: relative;
+  overflow: hidden;
+ box-shadow: 3px 8px 18px black;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+
+}
+.img-efecto img{
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+.img-efecto:hover{
+  transform: scale(1.1);
+}
+.img-efecto:hover img{
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+/*________________________*/
+/*css Integrantes- biografias */
+/*________________________*/
+
+
+.titulo-biografia{
+  color: #F0EEEF;
+  font-size: 27px;
+ margin-bottom: 30px;
+margin-top: 30px;
+}
+.bloque-biografia{
+  align-items: flex-start;
+   display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 40px 40px 20px; /* top, right, bottom, left */
+ 
+ }
+.imagen-biografia{
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.contenido-biografia {
+  max-width: 700px;
+}
+.texto-biografia{
+   color: #F0EEEF;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/*________________________*/
+/*css Discografia */
+/*________________________*/
+
+.titulo-discografia{
+  color: #F0EEEF;
+  font-size: 50px;
+  padding: 120px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.bloque-discografia{
+  color: #F0EEEF;
+  display: flex; /*alinea la imagen y el texto automaticamente*/
+  align-items: flex-start; /*alinea los elementos al iniio verticalmente*/
+  gap: 40px;
+  margin: 0 100px;
+  align-items: center;
+
+
+}
+
+.bloque-discografia img{
+  height: 250px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 12px 12px 12px black;
+  margin: 20px;
+  margin-top: 20px;
+  flex-shrink: 0; /*evita que la imagen cambie de tamaño cuando el contenedor cambie de tamaño*/
+
+}
+.album-info{
+    flex: 1;
+     display: flex;
+  flex-direction: column; /* acomoda el h2 arriba y el texto debajo */
+  justify-content: center;
+
+}
+.bloque-discografia h2{
+  font-size: 32px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+   
+}
+.bloque-discografia p{
+  max-width: 700px;
+  line-height: 1.4;
+  margin: 0;
+  font-size: 16px;
+  text-align: justify;
+ 
+  
+}
+
+.img-efecto-album:hover{
+  transform: scale(1.1);
+}
+.img-efecto-album:hover img{
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+.footer {
+  margin-bottom: 0px;
+  padding: 0.5rem;
+  text-align: center;
+  color: #F0EEEF;
+  background-color: #4E6380;
+}
+
+.footer .icono img {
+  width: 24px; /* ajusta el tamaño del icono */
+  height: auto;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.footer .icono img:hover {
+  transform: scale(1.1); /* efecto hover para que crezca ligeramente */
+}
+
+/*falta arreglar esto*/
+
+
+
+.abrir-menu{
+  display: none;
+}
+.cerrar-menu{
+  display: none;
+
+}
+
+@media screen and (max-width: 768px) {
+  /* Header y menú */
+  #header {
+    
+    align-items: center;
+    justify-content: space-between; /* logo a la izquierda, botón a la derecha */
+    display: flex;
+    flex-direction: row; /* para que logo y botón estén en línea */
+    padding: 10px;
+    width: 100%;
+     box-sizing: border-box;
+
+
+  }
+
+  .logo img {
+    height: 70px;
+    width: 70px;
+  }
+
+.abrir-menu, .cerrar-menu{
+  display: block;
+  border: 0;
+  font-size: 1.25rem;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+.abrir-menu{
+  display: block;
+  position: absolute;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: whitesmoke;
+       top: 32px;      /* separación desde arriba */
+    right: -370px;    /* separación desde la derecha */
+
+}
+.cerrar-menu{
+  color: white;
+}
+
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    /*position: absolute;*/
+    position: fixed; /* fijo para que cubra toda la pantalla */
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    height: 100vh; /* altura total de la ventana */
+    width: 200px; /* ancho del panel */
+    background-color: #3A6FBD;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    opacity: 0;
+      visibility: hidden;
+  }
+  .menu.visible{
+    opacity: 1;
+      visibility: visible;
+  }
+  .menu-lista{
+    flex-direction: column;
+    align-items: end;
+
+
+
+  }
+  .menu-lista li a{
+    color: whitesmoke;
+  }
+
+
+  /* Imagen y texto superpuesto */
+  .contenedor img {
+    width: 100%;
+    height: auto;
+  }
+
+  .texto-superpuesto {
+    font-size: 40px;
+    transform: translate(-50%, 10%);
+     box-shadow: rgba(0, 0, 0, .5);
+    text-align: ;
+  }
+
+  /* Sección video + texto */
+  .section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .video {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+
+  .texto {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+}
+
+/*@media (max-width: 480px) {
+  .texto-superpuesto {
+    font-size: 28px;
+  }
+
+  .video {
+    max-width: 250px;
+  }
+
+  .texto {
+    font-size: 14px;
+  }
+}*/
